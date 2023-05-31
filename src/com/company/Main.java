@@ -36,10 +36,14 @@ public class Main<tablouFructe> {
 
         System.out.println();
 
-        int z;
-        for (z = 1; z <= 100; z = z + 1) {
-            System.out.print(z + "," + " ");
+        int k=0;
+        for (int j=2;j<100;j+=2)
+        {
+            System.out.print(j+ ",");
+            k=k+1;
         }
+        System.out.println();
+        System.out.println(k + " ");
 
 //        int n = 5;
 //        int sum = 0;
@@ -62,13 +66,13 @@ public class Main<tablouFructe> {
 
         //Problema 1 ppt 2(3) slide 53
 
-//        int [] sir = {1, 5, 2, 8, 9, 14, 3, 4, 17, 10, 11};
-//        int maxim = 0;
-//        for(int t=0; t<sir.length; t=t+1){
-//            if (sir[t]>maxim)
-//                maxim=sir[t];
-//            System.out.println("Maximul este"+maxim);
-//        }
+        int [] sir = {1, 5, 2, 8, 9, 14, 3, 4, 17, 10, 11};
+        int maxim = 0;
+        for(int t=0; t<sir.length; t=t+1){
+            if (sir[t]>maxim)
+                maxim=sir[t];
+            System.out.println("Maximul este"+maxim);
+        }
 
         //Problema 2 ppt 2(3) slide 55
 
@@ -99,11 +103,11 @@ public class Main<tablouFructe> {
 
         System.out.println ();
 
-        int k = 10;
+        int q = 10;
         do {
-            System.out.print(k + " ");
-            k = k - 2;
-        } while (k > 0);
+            System.out.print(q + " ");
+            q = q - 2;
+        } while (q > 0);
 
 
         System.out.println ();
@@ -118,6 +122,12 @@ public class Main<tablouFructe> {
                 x++;
             } while (x <= n);
             System.out.println("Sum is " + sum);
+
+
+        int w=10;
+        int s=((w*(w+1))/2);
+        System.out.println("Valoarea sumei numarului w este = " +s);
+
         }
 
 }
